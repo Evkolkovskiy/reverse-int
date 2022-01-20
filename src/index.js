@@ -1,4 +1,6 @@
-const reverse = require('type-reverse')
+
 module.exports = function reverse (n) {
-  return reverse(n);
+  let nnew = Math.abs(n);
+  let str = nnew.toString();
+  return str.split('').reverse().join('');
 }
